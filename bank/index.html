@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="w-4/5 mx-auto mt-10">
+        <h1 class="text-6xl text-center">Well come in your <span class="font-bold text-[#3498db]">Account!!!</span></h1>
+        <section class="grid grid-cols-3 gap-5 mt-10">
+            <div class="bg-[#00cec9] text-white p-8 rounded-lg">
+                <h3 class="text-4xl">Deposit</h3>
+                <span class="text-5xl mt-3 block">$<span id="depo">00</span></span>
+            </div>
+            <div class="bg-[#fd79a8] text-white p-8 rounded-lg">
+                <h3 class="text-4xl">Withdraw</h3>
+                <h2 class="text-5xl mt-3 block" >$<span id="wdt">00</span></h2>
+            </div>
+            <div class="bg-[#00b894] text-white p-8 rounded-lg">
+                <h3 class="text-4xl">Balance</h3>
+                <span class="text-5xl mt-3 block" >$<span id="balance">1240</span></span>
+            </div>
+        </section>
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-5">
+                <div class="bg-[#EA2027] p-8 rounded-lg">
+                    <h2 class="text-4xl text-white">Deposit Money</h2>
+                    <div class="w-5/6 mx-auto">
+                        <input id="depo_field" class="block w-full p-2 rounded-md mt-5" type="number" placeholder="$ Amount you want to deposit">
+                        <button id="deposit_btn"  class="text-2xl text-white px-4 py-2 rounded-lg mt-3 bg-[#574b90]">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-[#9980FA] p-8 rounded-lg">
+                    <h2 class="text-4xl text-white">Withdraw Money</h2>
+                    <div class="w-5/6 mx-auto">
+                        <input id="wtd_filed" class="block w-full p-2 rounded-md mt-5" type="number" placeholder="$ Amount you want to deposit">
+                        <button id="Withdraw_btn" class="text-2xl text-white px-4 py-2 rounded-lg mt-3 bg-[#e15f41]">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="../js/bank.js"></script>
+</body>
+</html>
